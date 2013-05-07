@@ -3,6 +3,8 @@
 # 
 # Requires the cmudict file from the Natural Language Toolkit (NLTK) residing in the present working directory.
 
+from random import sample
+
 class WordsThatDontRhyme():
 
      def __init__(self):
@@ -40,8 +42,7 @@ class WordsThatDontRhyme():
           return False
 
      def select_words(self):
-           import random
-           self.s = random.sample(self.w, 2)
+           self.s = sample(self.w, 2)
 
      def main(self):
           self.select_words()
