@@ -9,7 +9,7 @@ class WordsThatDontRhyme():
 
      def __init__(self):
           self.vowels = ['AA', 'AH', 'EH', 'IH', 'OW', 'UH', 'AE', 'AO', 'AY', 'IY', 'ER', 'OY', 'UW']
-          lines = open('cmudict', 'r')
+          lines = open('cmudict-0.7b.txt', 'r')
           self.w = {} # words
           self.s = () # selection
           for line in lines:
